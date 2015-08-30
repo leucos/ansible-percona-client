@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Michel Blanc
+  description:
+  company:
+  license: MIT
+  min_ansible_version: 1.9
+
+  platforms:
+    - name: Ubuntu
+      versions:
+       - trusty
+    - name: Debian
+      versions:
+        - wheezy
+  categories:
+    - database
+
+dependencies: []

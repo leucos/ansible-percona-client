@@ -1,0 +1,2 @@
+- include: percona-client.yml tags=percona,percona:client
+
