@@ -1,2 +1,2 @@
-percona_client_version: {{ percona_version | default ("5.6") }}
+percona_client_version: "{{ percona_version | default ('5.6') }}"
 
