@@ -1,12 +1,13 @@
 - name: Adds percona key
   apt_key:
     keyserver: keys.gnupg.net
-    id: 1C4CBDCDCD2EFD2A
+    id: 8507EFA5
 
 - name: Adds percona repositories
   apt_repository:
     repo: 'deb http://repo.percona.com/apt {{ ansible_distribution_release }} main'
     state: present
+    update_cache: yes
 
 - name: Installs percona client libs
   apt: pkg="percona-server-client-{{ percona_client_version }}"
